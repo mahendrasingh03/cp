@@ -61,23 +61,13 @@
   position: relative;
 }
 
-/* .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: aquamarine;
-    color: #000;
-  } */
+
   
   .nav-links a {
     color: #000;
   }
 
-  /* .navtwo{
-    display: flex;
-    flex-direction: column;
-  } */
+  
 
   .upper{
     align-self: stretch;
@@ -86,10 +76,7 @@
     left: 4%;
   }
   
-  /* LOGO */
-  /* .logo {
-    font-size: 32px;
-  } */
+ 
   
   /* NAVBAR MENU */
   .menu {
@@ -146,10 +133,11 @@
     text-align: center;
   }
   
-  .dropdown li:hover {
+  /* .dropdown li:hover {
      /* background-color: #9f0000; */
      /* color: aliceblue; */
-  }
+  /* }   */
+  /* */ 
   
   .services:hover .dropdown {
     display: block;
@@ -193,8 +181,7 @@
     background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/hero_images.jpg?7363");  }
   .item4 {
     background-image: url("https://www.delightfoods.com/media/codazon/slideshow/g/a/gajak-and-rewri-web-bnr.jpg");  }
-  /* .item5 {
-    background-image: url("img2.jpg");  } */
+  
 
 
     .carousel {
@@ -203,7 +190,7 @@
     background-attachment: fixed;
       display: flex;
       overflow: hidden;
-      width: 80%; /* Adjust the width as needed */
+      width: 80%; 
       height: 500px;
     }
 
@@ -217,7 +204,7 @@
       box-sizing: border-box;
     }
 
-    /* Optional: Add navigation buttons */
+    
     .carousel-button {
       cursor: pointer;
       font-size: 24px;
@@ -246,7 +233,7 @@
         }
         @media all and (transform-3d), (-webkit-transform-3d) {
           > .item{
-            /* // use your favourite prefixer here */
+           
             transition: 500ms ease-in-out left;
             transition: 500ms ease-in-out all;
             backface-visibility: visible;
@@ -261,7 +248,7 @@
       }
     }
     
-    /* // non-related styling: */
+   
     body{
       /* color: #333; */
       color: #333;
