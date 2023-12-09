@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  /* NAVBAR STYLING STARTS */
+
+.nav-links{
+    position: absolute;
+    left: 24rem;
+}
+.container{
+  height: 90px;
+  width: 100%;
+  /* background: green; */
+  display: flex;
+}
+.logo{
+  height: 100%;
+  width: 20%;
+  font-size: 32px;
+  position: relative;
+  left: 0.5rem;
+  top: 1rem;
+
+  /* background: red; */
+  
+}
+
+.nav{
+  height: 100%;
+
+  /* background: yellow; */
+  align-self: stretch;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.lower{
+  display: flex;
+  align-items: center;
+  /* background: pink; */
+  height: 45%;
+  width: 100%;
+  
+}
+.middle{
+  height: 1%;
+  background-color: darkgray;
+  left: 3.5%;
+  position: relative;
+}
+
+/* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aquamarine;
+    color: #000;
+  } */
+  
+  .nav-links a {
+    color: #000;
+  }
+
+  /* .navtwo{
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .upper{
+    align-self: stretch;
+    width: 50%;
+    position: relative;
+    left: 4%;
+  }
+  
+  /* LOGO */
+  /* .logo {
+    font-size: 32px;
+  } */
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    /* margin-left:-60px; */
+   
+  }
+  
+  .menu li:hover {
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    z-index: 100;
+  }
+  .menu li a:hover{
+    color: #9f0000;
+    text-decoration: none;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  .login{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    right: 2rem;
+    position: absolute;
+  }
+  /* DROPDOWN MENU */
+  .services {
+    position: relative; 
+  }
+  
+  .dropdown {
+    background-color:#fff;
+    /* color: whitesmoke; */
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li + li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+     /* background-color: #9f0000; */
+     /* color: aliceblue; */
+  }
+  
+  .services:hover .dropdown {
+    display: block;
+  }
+
+  /* Slideshow container */
+  .carousel_items {
+    display: flex;
+    wrap: nowrap;
+    overflow: hidden;
+  }
+  .carousel_item {
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+    transition: all 0.5s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .carousel_text {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: calc(5.5rem + 0.3vw);
+    font-weight: bolder;
+  }
+  
+  .item1 {
+    background-image: url("https://heartymart.com/overseas/wp-content/themes/heartymart/assets/images/hm_banner.jpg");
+  }
+  .item2 {
+    background-image: url("https://www.delightfoods.com/media/codazon/slideshow/c/h/christmas_23_web-01-01.jpg");  }
+  .item3 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/hero_images.jpg?7363");  }
+  .item4 {
+    background-image: url("https://www.delightfoods.com/media/codazon/slideshow/g/a/gajak-and-rewri-web-bnr.jpg");  }
+  /* .item5 {
+    background-image: url("img2.jpg");  } */
+
+
+    .carousel {
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+      display: flex;
+      overflow: hidden;
+      width: 80%; /* Adjust the width as needed */
+      height: 500px;
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Optional: Add navigation buttons */
+    .carousel-button {
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    /* multiple carousel */
+
+    .multi-item-carousel{
+      .carousel-inner{
+        > .item{
+          transition: 500ms ease-in-out left;
+        }
+        .active{
+          &.left{
+            left:-33%;
+          }
+          &.right{
+            left:33%;
+          }
+        }
+        .next{
+          left: 33%;
+        }
+        .prev{
+          left: -33%;
+        }
+        @media all and (transform-3d), (-webkit-transform-3d) {
+          > .item{
+            /* // use your favourite prefixer here */
+            transition: 500ms ease-in-out left;
+            transition: 500ms ease-in-out all;
+            backface-visibility: visible;
+            transform: none!important;
+          }
+        }
+      }
+      .carouse-control{
+        &.left, &.right{
+          background-image: none;
+        }
+      }
+    }
+    
+    /* // non-related styling: */
+    body{
+      /* color: #333; */
+      color: #333;
+    }
+    h1{
+      color: white;
+      font-size: 2.25em;
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+    }
+    .colmahi2{
+      display: flex;
+      justify-content: center;
+      /* height: 250px; */
+    }
+    #theCarousel{
+      height: 100%;
+      margin-bottom: 50px;
+    }
+  
+    /* about  */
+    .about{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 20rem;
+      width: 100%;
+    }
+    .about-sub{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .about-logo{
+      font-size: 40px;
+    }
+    /* end about */
+    /* start footer */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container3 {
+	width: 100%;
+	margin: auto;
+  height: 16rem;
+
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 40px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+    /* end footer */
