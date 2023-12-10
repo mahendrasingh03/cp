@@ -22,6 +22,7 @@
   width: 100%;
   /* background: green; */
   display: flex;
+  /* margin-bottom: 5px; */
 }
 .logo{
   height: 100%;
@@ -125,12 +126,15 @@
   
   .dropdown li + li {
     margin-top: 10px;
+   
   }
   
   .dropdown li {
     padding: 0.5em 1em;
-    width: 8em;
+    width: 10em;
     text-align: center;
+    font-size: 15px;
+    
   }
   
   /* .dropdown li:hover {
@@ -149,6 +153,10 @@
     wrap: nowrap;
     overflow: hidden;
   }
+  .carousel-container{
+    margin-bottom:4em ;
+  }
+  
   .carousel_item {
     position: relative;
     min-width: 100%;
@@ -278,6 +286,8 @@
       justify-content: space-between;
       height: 20rem;
       width: 100%;
+      margin-top: 4em;
+      margin-bottom: 3em;
     }
     .about-sub{
         display: flex;
