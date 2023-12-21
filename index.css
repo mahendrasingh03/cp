@@ -18,7 +18,7 @@
     left: 24rem;
 }
 .container{
-  height: 90px;
+  height: 9rem;
   width: 100%;
   /* background: green; */
   display: flex;
@@ -27,7 +27,7 @@
 .logo{
   height: 100%;
   width: 20%;
-  font-size: 32px;
+  font-size: 1.4rem;
   position: relative;
   left: 0.5rem;
   top: 1rem;
@@ -37,7 +37,7 @@
 }
 
 .nav{
-  height: 100%;
+  /* height: 100%; */
 
   /* background: yellow; */
   align-self: stretch;
@@ -48,16 +48,19 @@
   
 }
 .lower{
+  margin-top: 1.5rem ;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   /* background: pink; */
-  height: 45%;
+  height: 47%;
   width: 100%;
   
 }
 .middle{
   height: 1%;
-  background-color: darkgray;
+  
+  background-color: gray;
   left: 3.5%;
   position: relative;
 }
@@ -76,21 +79,32 @@
     position: relative;
     left: 4%;
   }
-  
+  .hearty{
+    height: 3rem;
+    border: 1px solid gray;
+    position: relative;
+    top: 8%;
+    width: 10rem;
+    border-radius: 1.5rem;
+    padding-left: 1rem;
+    padding-top: .4rem;
+    margin-top: .2rem;
+    /* background-color: #000; */
+  }
  
   
   /* NAVBAR MENU */
   .menu {
     display: flex;
     gap: 1em;
-    font-size: 18px;
+    font-size: 2rem;
     /* margin-left:-60px; */
    
   }
   
   .menu li:hover {
     background-color: white;
-    border-radius: 5px;
+    border-radius: .4rem;
     transition: 0.3s ease;
     z-index: 100;
   }
@@ -100,12 +114,12 @@
   }
   
   .menu li {
-    padding: 5px 14px;
+    padding: .4rem 1rem;
   }
   .login{
     display: flex;
     gap: 1em;
-    font-size: 18px;
+    font-size: 1.8rem;
     right: 2rem;
     position: absolute;
   }
@@ -120,20 +134,20 @@
     padding: 1em 0;
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
-    border-radius: 8px;
-    top: 35px;
+    border-radius: .5rem;
+    top: 2.3rem;
   }
   
   .dropdown li + li {
-    margin-top: 10px;
+    margin-top: .7rem;
    
   }
   
   .dropdown li {
-    padding: 0.5em 1em;
-    width: 10em;
+    padding: 0.5rem 1rem;
+    width: 15rem;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.6rem;
     
   }
   
@@ -154,7 +168,7 @@
     overflow: hidden;
   }
   .carousel-container{
-    margin-bottom:5em ;
+    margin-bottom:5rem ;
   }
   
   .carousel_item {
@@ -199,7 +213,7 @@
       display: flex;
       overflow: hidden;
       width: 80%; 
-      height: 500px;
+      height: 32rem;
     }
 
     .carousel-inner {
@@ -213,10 +227,10 @@
     }
 
     
-    .carousel-button {
+    /* .carousel-button {
       cursor: pointer;
-      font-size: 24px;
-    }
+      font-size: 1.5rem;
+    } */
 .bg-tr{
   height: 100%;
   background: rgb(0, 0, 0,0.52);
@@ -262,17 +276,16 @@
     
    
     body{
-      /* color: #333; */
       color: #333;
     }
-    h1{
+    /* h1{
       color: white;
-      font-size: 2.25em;
+      font-size: 2.25rem;
       text-align: center;
-      margin-top: 1em;
-      margin-bottom: 2em;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
       text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
-    }
+    } */
     .colmahi2{
       display: flex;
       justify-content: center;
@@ -280,17 +293,18 @@
     }
     #theCarousel{
       height: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 3.2rem;
     }
   
     /* about  */
     .about{
       display: flex;
+      flex-wrap:wrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       height: 20rem;
       width: 100%;
-      margin: 4em 0;
+      margin: 5rem 0;
     }
     .about-sub{
         display: flex;
@@ -298,10 +312,11 @@
         align-items: center;
         padding: 5%;
         text-align: center;
+        width: 40rem;
     }
 
     .about-logo{
-      font-size: 40px;
+      font-size: 2.9rem;
     }
     /* end about */
     /* start footer */
@@ -325,7 +340,7 @@ body {
 
 .footer {
 	background-color: #151515;
-	padding: 80px 0;
+	padding: 5.5rem 0;
 }
 
 .container3 {
@@ -345,14 +360,14 @@ ul {
 }
 .footer-col {
 	width: 25%;
-	padding: 0 15px;
+	padding: 0 1.5rem;
 }
 
 .footer-col h4 {
-	font-size: 18px;
+	font-size: 1.6rem;
 	color: #FFF;
 	text-transform: capitalize;
-	margin-bottom: 35px;
+	margin-bottom: 2.2rem;
 	font-weight: 500;
 	position: relative;
 }
@@ -361,14 +376,14 @@ ul {
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -10px;
+	bottom: -.7rem;
 	background-color: #E91E63;
-	width: 50px;
-	height: 2px;
+	width: 4.4rem;
+	height: .2rem;
 }
 
 .footer-col ul li:not(:last-child) {
-	margin-bottom: 10px;
+	margin-bottom: .7rem;
 }
 
 .footer-col ul li a {
@@ -383,19 +398,19 @@ ul {
 
 .footer-col ul li a:hover {
 	color: #FFF;
-	padding-left: 7px;
+	padding-left: .5rem;
 }
 
 .footer-col .social-links a {
 	color: #FFF;
 	background-color: rgba(255, 255, 255, 0.2);
 	display: inline-block;
-	height: 40px;
-	width: 40px;
+	height: 3.8rem;
+	width: 3.8rem;
 	border-radius: 50%;
 	text-align: center;
-	margin: 0 10px 10px 0;
-	line-height: 40px;
+	margin: 0 .8rem .8rem 0;
+	line-height: 3.7rem;
 	transition: all 0.5s ease;
 }
 
@@ -404,16 +419,68 @@ ul {
 	background-color: #FFF;
 }
 
-@media(max-width: 767px) {
-	.footer-col {
-		width: 50%;
-		margin-bottom: 30px;
-	}
-}
-
-@media(max-width: 574px) {
+/* @media(max-width: 574px) {
 	.footer-col {
 		width: 100%;
 	}
-}
+} */
     /* end footer */
+
+@media(max-width: 942px) {
+	.container2{
+    margin-top: 70px;
+  }
+}
+@media(max-width: 800px) {
+	.container2{
+    margin-top: 300px;
+  }
+}
+@media(max-width: 602px) {
+	.container2{
+    margin-top: 450px;
+  }
+}
+/* humburger code */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .middle{
+    display: none;
+  }
+  
+  .container {
+      flex-direction: row;
+  }
+  .nav-links {
+      position: relative;
+      left: 0;
+      display: none; /* Hide the menu by default */
+  }
+  .upper {
+      width: 100%;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .hamburger {
+      display: block; /* Display the hamburger icon on small screens */
+  }
+  .menu {
+      flex-direction: column;
+      align-items: center;
+  }
+  .login {
+      position: relative;
+      right: 0;
+      margin-top: 1rem;
+  }
+}
