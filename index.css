@@ -7,6 +7,7 @@
     text-decoration: none;
   }
   
+  
   li {
     list-style: none;
   }
@@ -59,7 +60,7 @@
 }
 .middle{
   height: 1%;
-  
+  width: 100%;
   background-color: gray;
   left: 3.5%;
   position: relative;
@@ -121,7 +122,11 @@
     gap: 1em;
     font-size: 1.8rem;
     right: 2rem;
+    color: darkgray;
     position: absolute;
+  }
+  .login a i{
+    color: darkgray;
   }
   /* DROPDOWN MENU */
   .services {
@@ -275,9 +280,9 @@
     }
     
    
-    body{
+    /* body{
       color: #333;
-    }
+    } */
     /* h1{
       color: white;
       font-size: 2.25rem;
@@ -304,7 +309,7 @@
       justify-content: center;
       height: 20rem;
       width: 100%;
-      margin: 5rem 0;
+      margin: 4rem 0;
     }
     .about-sub{
         display: flex;
@@ -426,9 +431,9 @@ ul {
 } */
     /* end footer */
 
-@media(max-width: 942px) {
+@media(max-width: 982px) {
 	.container2{
-    margin-top: 70px;
+    margin-top: 300px;
   }
 }
 @media(max-width: 800px) {
@@ -436,7 +441,7 @@ ul {
     margin-top: 300px;
   }
 }
-@media(max-width: 602px) {
+@media(max-width: 800px) {
 	.container2{
     margin-top: 450px;
   }
@@ -445,6 +450,7 @@ ul {
 .hamburger {
   display: none;
   font-size: 2.7rem;
+  color: #E00000;
   background: none;
   border: none;
   cursor: pointer;
