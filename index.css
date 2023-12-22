@@ -30,7 +30,7 @@
   font-size: 1.4rem;
   position: relative;
   left: 0.5rem;
-  top: 1rem;
+  top: 2rem;
 
   /* background: red; */
   
@@ -444,13 +444,13 @@ ul {
 /* humburger code */
 .hamburger {
   display: none;
-  font-size: 2rem;
+  font-size: 2.7rem;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   /* Adjust styles for smaller screens */
   .middle{
     display: none;
@@ -470,9 +470,14 @@ ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      display: none;
+  }
+  .lower{
+    display: none;
   }
   .hamburger {
-      display: block; /* Display the hamburger icon on small screens */
+      display: block;
+       /* Display the hamburger icon on small screens */
   }
   .menu {
       flex-direction: column;
@@ -483,4 +488,5 @@ ul {
       right: 0;
       margin-top: 1rem;
   }
+  
 }
