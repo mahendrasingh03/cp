@@ -23,11 +23,16 @@ setInterval(() => {
 },3000)
 
 // multiple carousel........
-function toggleMenu() {
-  var x = document.getElementById("mahi1");
-  if (x.className === "responsive-list") {
-      x.className += " responsive";
-  } else {
-      x.className = "responsive-list";
-  }
-}
+const hm = document.getElementsByClassName("hamburger")[0];
+const list = document.getElementsByClassName("mobile")[0];
+var listOpen = 0;
+hm.addEventListener("click", ()=>{
+  // console.log(listOpen);
+        if(listOpen === 0){
+            list.style.display = "block";
+            listOpen = 1;
+        }else {
+            list.style.display = "none";
+            listOpen = 0;
+        }
+})
