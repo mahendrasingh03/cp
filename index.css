@@ -443,7 +443,7 @@ ul {
 }
 @media(max-width: 800px) {
 	.container2{
-    margin-top: 300px;
+    margin-top: 400px;
   }
 }
 @media(max-width: 650px) {
@@ -523,7 +523,19 @@ ul {
   
 }
 
-
+.move{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 4rem;
+  width: 100%;
+  font-weight: 200;
+  font-size: 1.5em;
+  background-color: #E00000;
+}
+.move marquee{
+  color: white;
+}
 .mobile{
   position: absolute;
   display: none;
@@ -546,13 +558,16 @@ ul {
   /* display: none; */
 }
 .response-item{
+  text-decoration: none;
  font-size: 2em;
  color:#E00000;
  
 }
 .response-item:hover{
   text-decoration: none;
+  color: #515551;
 }
+
 
 @media(max-width: 328px) {
 	.response{
