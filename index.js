@@ -23,8 +23,11 @@ setInterval(() => {
 },3000)
 
 // multiple carousel........
-
-// function toggleMenu() {
-//   var navLinks = document.querySelector('.nav-links');
-//   navLinks.style.display = (navLinks.style.display === 'flex') ? 'none' : 'flex';
-// }
+function toggleMenu() {
+  var x = document.getElementById("mahi1");
+  if (x.className === "responsive-list") {
+      x.className += " responsive";
+  } else {
+      x.className = "responsive-list";
+  }
+}
