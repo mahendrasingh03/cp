@@ -205,13 +205,29 @@
   
   .item1 {
     background-image: url("https://heartymart.com/overseas/wp-content/themes/heartymart/assets/images/hm_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .item2 {
-    background-image: url("https://www.delightfoods.com/media/codazon/slideshow/c/h/christmas_23_web-01-01.jpg");  }
+    background-image: url("https://www.delightfoods.com/media/codazon/slideshow/c/h/christmas_23_web-01-01.jpg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+    
   .item3 {
-    background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/hero_images.jpg?7363");  }
+    background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/hero_images.jpg?7363");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .item4 {
-    background-image: url("https://www.delightfoods.com/media/codazon/slideshow/g/a/gajak-and-rewri-web-bnr.jpg");  }
+    background-image: url("https://www.delightfoods.com/media/codazon/slideshow/g/a/gajak-and-rewri-web-bnr.jpg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
 
 
@@ -440,11 +456,15 @@ ul {
 	.container2{
     margin-top: 300px;
   }
+  
 }
 @media(max-width: 800px) {
 	.container2{
     margin-top: 400px;
   }
+ .item1,.item2,.item3,.item4{
+    height: 20em;
+ }
 }
 @media(max-width: 650px) {
 	.footer{
@@ -454,11 +474,26 @@ ul {
     width: 25%;
     padding: 0 7rem;
   }
+  .container2{
+    margin-top: 300px;
+  }
+  .carousel_text{
+    /* position: relative; */
+    bottom: 2em;
+    left: 55%;
+    height:50%;
+    width: 100%;
+   }
 }
 @media(max-width: 322px) {
 	.footer{
     height: 90rem;
   }
+  .item1,.item2,.item3,.item4{
+    width: 20em;
+ }
+ 
+ 
 }
 
 /* humburger code */
@@ -474,12 +509,9 @@ ul {
   /* right: -14em; */
   
 }
-/* .brands{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-} */
+.brands{
+ margin-bottom: 2rem;
+}
 .brands img{
   width: 100%;
     height: auto;
@@ -536,6 +568,7 @@ ul {
   font-weight: 200;
   font-size: 1.5em;
   background-color: #E00000;
+  margin: 2rem 0;
 }
 .move marquee{
   color: white;
