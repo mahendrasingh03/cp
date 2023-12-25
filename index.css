@@ -483,6 +483,7 @@ ul {
     left: 55%;
     height:50%;
     width: 100%;
+    font-size: 3em;
    }
 }
 @media(max-width: 322px) {
